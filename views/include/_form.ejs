@@ -1,0 +1,30 @@
+ <!-- form handling -->
+ <form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        
+
+        <div class="form-group">
+            <label for="book_name" class="text-light" >Book Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="book_name" value="" placeholder="Enter Book Name here">
+        </div>
+        <div class="form-group">
+            <label for="price" class="text-light">Price</label>
+            <input type="text" name="price" value="" placeholder="Enter Price of book">
+        </div>
+        <div class="form-group">
+            <label for="catagory" class="text-light">Catagory</label>
+            <input type="text" name="catagory" value="" placeholder="Enter Catagory of book">
+        </div>
+        <div class="form-group">
+            <label for="stock" class="text-light">Stock</label>
+            <input type="text" name="stock" value="" placeholder="Enter available stock of book">
+        </div>
+
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>

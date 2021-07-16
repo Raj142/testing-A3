@@ -1,0 +1,56 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> All Users</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update User</h2>
+            <span class="text-light">Use the below form to Update an account</span>
+        </div>
+
+        <!-- add user form -->
+         <!-- form handling -->
+ <form method="POST" id="update_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-light">Book Name</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="name" value="<%= user.book_name %>" placeholder="Enter Book Name">
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-light">Price</label>
+            <input type="text" name="email" value="<%= user.price%>" placeholder="Enter Book Price">
+        </div>
+        <div class="form-group">
+            <label for="catagory" class="text-light">Catagory</label>
+            <input type="text" name="catagory" value="<%= user.catagory%>" placeholder="Enter Book Catagory">
+        </div>
+        <div class="form-group">
+            <label for="stock" class="text-light">Stock</label>
+            <input type="text" name="stock" value="<%= user.stock%>" placeholder="Enter Book Stock">
+        </div>
+
+       
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
+       
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
